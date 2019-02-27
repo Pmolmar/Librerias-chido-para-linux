@@ -9,7 +9,7 @@ sudo apt-get install grive
 
 grive -a //en el directorio que quieras sincronizar
 grive sync //para sincronizarlas o
-grive -dry-run //para ver lo que se va a sincronizar
+grive --dry-run //para ver lo que se va a sincronizar
 -----------------------------------
 
 
