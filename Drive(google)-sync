@@ -1,0 +1,10 @@
+#grive, libreria para poder sincronizar carpetas con Google Drive.
+
+#descargar grive
+sudo apt-add-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install grive
+
+grive -a #en el directorio que quieras sincronizar
+grive sync #para sincronizarlas o
+grive --dry-run #para ver lo que se va a sincronizar
