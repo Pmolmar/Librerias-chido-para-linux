@@ -1,0 +1,17 @@
+#Si tenemos un archivo que queremos ejecutar como si de un programa se tratara en el escritorio:
+#1.- El archivo ha de tener permisos de ejecucion.
+#2.- Crear con su mismo nombre un .desktop ej(script.sh.desktop).
+#3.- El .desktop tambien a de tener permisos de ejecucion y contener lo siguiente:
+
+#Codigo para poder crear un fichero ejecutable:
+
+[Desktop Entry]	
+Type=Application,Link o Directory #define el tipo de uso que queremos darle
+Encoding=UTF-8	#Codificacion usada
+Name= #Nombre
+Comment= #Comentario
+Exec= #Comando con el que se inicia el fichero ejecutable, ej: bash /home/desktop/pepe/script.sh
+Icon= #Icono
+Terminal= #Indican si la terminal es usada (true or false)
+
+#De todo lo anterior para que puede funcionar solo es nesesario el Type,Exec,Terminal y Name
