@@ -1,0 +1,2 @@
+Esto permite poder ignorar si se empieza por mayusculas o minusculas al tabular
+En le fichero --> /etc/inputrc: set completion-ignore-case on
