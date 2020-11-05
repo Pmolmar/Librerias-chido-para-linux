@@ -44,3 +44,14 @@ En el fichero --> `/etc/inputrc: set completion-ignore-case on`
 ## Generacion de SSH para GH
 Un paso: `ssh-keygen -t rsa -b 4096 -C "correo@mail.com"`, elegimos nombre y si queremos contrasena.  
 Despues en ~/.ssh/ tendremos el .pub que nesecitaremos para GH.
+
+## Configuracion de bash para git
+Anadimos al final de nuestro fichero ~/.bashrc:
+~~~bash
+export GIT_PS1_SHOWDIRTYSTATE='y'
+export GIT_PS1_SHOWSTASHSTATE='y'
+export GIT_PS1_SHOWUNTRACKEDFILES='y'
+export GIT_PS1_DESCRIBE_STYLE='contains'
+export GIT_PS1_SHOWUPSTREAM='auto'
+export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$'
+~~~
